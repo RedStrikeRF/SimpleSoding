@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
+.container {
+  height: 771px;
+  width: 1440px;
+  margin: 120px 127px 30px 143px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 30px;
+}
+
+
+.mini {
+  max-width: 100%;
+  max-height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: flex-start;  
+  row-gap: 37px;
+  column-gap: 30px;
+}
+
+
+
+.under-line {
+  width: 90px;
+  height: 4px;
+}
+
+.goods {
+  background-color: rgba(255, 255, 255, 1);
+  width: 270px;
+  height: 289px;
+  box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.03);
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.goods:first-child {
+  box-shadow: none;
+  align-items: flex-start;
+}
+
+.goods:nth-child(4n) {
+  background-color: rgba(250, 236, 233, 1)
+}
+
+.goods:last-child {
+  width: 570px;
+  height: 614px;
+}
+
+.goods:nth-child(3n) img{
+  margin-top: 20px;
+}
+
+.goods:nth-child(5n) img{
+  margin-top: 19px;
+}
+
+.goods-title {
+  font-family: "Playfair Display", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 37px;
+  letter-spacing: 0.05em;
+  text-align: left;
+  color: rgba(48, 48, 50, 1);
+
+  margin-bottom: 7px;
+  margin-top: 123px;
+}
+
+.goods-name {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: rgba(48, 48, 50, 1);
+
+  margin-bottom: 7px;
+}
+
+.price {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(48, 48, 50, 1);  
+}
